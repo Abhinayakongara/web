@@ -1,1 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Job Title</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Enter Job Title</h1>
+    <form id="jobForm" onsubmit="return validateForm()">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" required><br><br>
+        
+        <label for="type">Type:</label>
+        <select id="type" name="type" required>
+            <option value="">Select</option>
+            <option value="Full-time">Full-time</option>
+            <option value="Part-time">Part-time</option>
+        </select><br><br>
 
+        <label for="department">Department:</label>
+        <select id="department" name="department" required>
+            <option value="">Select</option>
+            <option value="HR">HR</option>
+            <option value="IT">IT</option>
+            <option value="Finance">Finance</option>
+        </select><br><br>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="">Select</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+            <option value="Canada">Canada</option>
+        </select><br><br>
+
+        <label for="description">Description:</label><br>
+        <textarea id="description" name="description" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="openingdate">Opening Date:</label>
+        <input type="date" id="openingdate" name="openingdate" value="" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
